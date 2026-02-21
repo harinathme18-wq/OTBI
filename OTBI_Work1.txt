@@ -1,0 +1,280 @@
+select invoice_id,
+		amount_paid,
+		invoice_num,
+		segment1 sup_num,
+to_char(invoice_date,'DD-MON-YYYY','nls_date_language=American')inv_date
+ from ap_invoices_all aia,
+	  poz_suppliers sup
+where aia.vendor_id = sup.vendor_id	
+and (invoice_num IN (:p_inv_num) OR LEASt(:p_inv_num) Is NULL)
+
+'All' IN (:p_inv_num||'All'))
+
+LEASt(:p_inv_num) Is NULL
+
+
+[i]Following Parameters are selected[/i]
+[br/][br/]
+[b]Supplier Name :[/b] @{P1}{All}[br/]
+[b]Site :[/b] @{P2}{All}[br/]
+[b]Country :[/b] @{p3}{All}[br/]
+
+PORTALPATH -->  select ‘/shared/_portal/mydashboard’ from dual;
+TIMEZONE --> select ‘(GMT-08:00) Pacific Time (US & Canada)’ from dual;
+
+@{variablename}{defaultvalue}
+
+Dell Inc. 1255,
+Lee Supplies 1252, 
+JGA 1254
+
+VALUEOF(NQ_SESSION.USER) --> Session variable
+
+https://ucf6-zlhl-fa-ext.oracledemos.com/fscmUI/faces/deeplink?objType=@{1}&action=@{2}&objKey=InvoiceId=@{3}
+
+AP_PAYINVOICE/ AP_VIEWINVOICE
+CREATE/VIEW 
+Inv_id (column Value)
+
+https://www.oracle.com/webfolder/technetwork/tutorials/tutorial/cloud/r13/wn/r13-2018-ppm-wn.htm#F4337 - customizations
+
+https://www.oracle.com/webfolder/technetwork/tutorials/obe/fmw/bi/bi1113/actionframework/actionframework.htm
+
+
+CASE WHEN "Worker"."Employee Hire Date" is not null THEN CONCAT (CONCAT( CONCAT( CONCAT(SUBSTRING((CAST("Worker"."Employee Hire Date" AS CHAR)) FROM 9 FOR 2), '/') , SUBSTRING((CAST("Worker"."Employee Hire Date" AS CHAR)) FROM 6 FOR 2)), '/'), SUBSTRING((CAST("Worker"."Employee Hire Date" AS CHAR)) FROM 1 FOR 4)) ELSE '' END
+
+Import Oracle Fusion Data Extensions for Transactional Business Intelligence
+
+Server Variable: The value of a Repository Variable or Session Variable will be the default.
+For a session variable, prefix the name with NQ_SESSION, such as NQ_SESSION.USER.
+• SQL Results: The results of a SQL statement.
+• Variable Expression: references to reserved (system) session variables, including:
+o @{system.currentTime}
+o @{system.productVersion}
+o @{session.locale}
+o @{session.language}
+o @{session.loginTime}
+o @{session.logoutTime}
+o @{session.lastAccessTime}
+o @{session.currentUser.id}
+o @{user.homeDirectory}
+o @{user.id}
+o @{user.displayName}
+
+VALUEOF(RELEASE_VERSION)
+VALUEOF(CM_USER)
+
+
+USER,
+DISPLAYNAME
+LOGLEVEL
+
+
+SELECT   FROM "Supplier Import - Supplier Real Time" FETCH FIRST 65001 ROWS ONLY
+
+user presentation var in result view section
+
+Oracle.apps.financials.payables.invoices.transactions.publicView.analytics.InvoiceDistributionPVO	AP_CHECKS_ALL	CHECK_NUMBER
+oracle.apps.financials.payables.payments.singlePayments.publicView.analytics.PaidDisbursementSchedulePVO	AP_CHECKS_ALL	CHECK_NUMBER
+oracle.apps.financials.payables.payments.singlePayments.publicView.analytics.PaymentHistoryDistributionPVO	AP_CHECKS_ALL	CHECK_NUMBER
+oracle.apps.financials.payables.payments.singlePayments.publicView.analytics.DisbursementHeaderPVO	AP_CHECKS_ALL	CHECK_NUMBER
+oracle.apps.financials.payables.payments.singlePayments.publicView.analytics.PaidDisbursementSchedulePVO	AP_CHECKS_ALL	CHECK_VOUCHER_NUM
+oracle.apps.financials.payables.payments.singlePayments.publicView.analytics.DisbursementHeaderPVO	AP_CHECKS_ALL	CHECK_VOUCHER_NUM
+oracle.apps.financials.payables.payments.singlePayments.publicView.analytics.PaymentHistoryDistributionPVO
+
+
+oracle.apps.financials.payables.invoices.transactions.publicView.InvoiceDistributionPVO
+
+oracle.apps.financials.payables.invoices.transactions.publicView.InvoiceHeaderPVO
+
+
+
+oracle.apps.fnd.applcore.lookups.model.publicView.CommonLookupPVO
+
+NATIONALITY
+
+oracle.apps.prc.poz.publicView.SupplierPVO
+oracle.apps.prc.poz.publicView.SupplierSitePVO
+
+ 	
+EEC_CONTEST_STATUS --code
+
+Ledger currency:
+oracle.apps.financials.generalLedger.currencies.manageRate.publicView.CurrencyPVO
+application name should be Application Common Components.
+
+oracle.apps.financials.payables.invoices.transactions.publicView.InvoiceDistributionPVO
+oracle.apps.financials.payables.invoices.transactions.publicView.InvoiceDistributionPVO
+
+oracle.apps.financials.payables.invoices.transactions.publicView.InvoiceHeaderPVO
+
+
+<?import:xdoxsl:///Custom/Common Content/Templates/BusinessUnitImages.xsb?loc=${_XDOLOCALE}?><?call-template: image1?>
+
+Custom/Common Content/Templates
+
+-HR_ALL_ORGANIZATION_UNITS_F:the master table which holds all the organization IDs
+-HR_ORGANIZATION_UNITS_F_TL:organization Translation Table
+
+IN ('PCS10026_0419','INV_331797')
+
+<?if:SHORT_CODE='University US Business Unit'?> <?call-template: image2?> <?end if?>
+
+INV : 04252020-2-DM
+
+-HR_ALL_ORGANIZATION_UNITS_F:the master table which holds all the organization IDs
+-HR_ORGANIZATION_UNITS_F_TL:organization Translation Table
+
+<?import:xdoxsl:///Custom/Common Content/Templates/BusinessUnitImages.xsb?loc=${_XDOLOCALE}?><?call-template: image1?>
+
+<?import:xdoxsl:///Common Content/Templates/Workflow Notification Subtemplate.xsb?loc=${_XDOLOCALE}?><?call-template: FusionHeaderLogo?>
+
+http://beyondobiee.blogspot.com/2014/02/presentation-variables.html
+
+SELECT "Time"."Calendar Year" FROM "Expenses - Expense Transactions Real Time" WHERE "Time"."Calendar Year" BETWEEN 2015 AND 2020 FETCH FIRST 65001 ROWS ONLY
+
+ACtion Links:
+----------------------------
+AP :
+-------
+https://ucf6-zlhl-fa-ext.oracledemos.com/fscmUI/faces/deeplink?objType=@{1}&action=@{2}&objKey=InvoiceId=@{3}
+
+https://ecbp-test.fa.us2.oraclecloud.com/fscmUI/faces/deeplink?objType=@{1}&action=@{2}&objKey=InvoiceId=@{3}
+
+https://eebv-test.fa.us2.oraclecloud.com/fscmUI/faces/deeplink?objType=@{1}&action=@{2}&objKey=InvoiceId=@{3}
+
+AP_PAYINVOICE/ AP_VIEWINVOICE/EDIT INVOICE
+CREATE/VIEW 
+Inv_id (column Value)
+
+
+objtype = AP_VIEWINVOICE
+ACtion = view
+objkey = inv_id
+
+View Journal Entry:
+--------------------
+https://eebv-test.fa.us2.oraclecloud.com/fscmUI/faces/deeplink?objType=@{1}&action=@{2}&objKey=applicationId=@{3};aeHeaderId=@{4};closeMainTaskOnExit=@{5}
+
+XLA_SUBLEDGER_VIEWJOURNAL
+VIEW
+Appl_id
+Jouranl_header_id
+OTBI
+
+page entry
+
+edit dashboard  and remove editdashboard and replace Portal key word
+
+saw.dll?EditDashboard&PortalPath=%2Fshared%2FCustom%2FFIN%2FAHC%2FAHC%20Loan%2FGSE%20AHC%20Loan%20Analysis%20Dashboard
+saw.dll?Portal&PortalPath=%2Fshared%2FCustom%2FFIN%2FAHC%2FAHC%20Loan%2FGSE%20AHC%20Loan%20Analysis%20Dashboard - use this in structure--> pageentry
+
+------------
+saw.dll?Portal&PortalPath=%2Fshared%2FCustom%2FDemo%20BI%2FTechReports%2FXXCSupplierDashboard1
+
+. This is going to return any KFFs are in edit mode
+
+SELECT f.* FROM fusion.fnd_kf_flexfields_b f;
+
+2. To review the BI OBJECT Name and other columns
+
+o debug the issue run the below sqls in BI Publisher data model and check if any Flexfields are in EDITED mode.
+
+1. This is going to return any KFFs are in edit mode
+
+SELECT f.* FROM fusion.fnd_kf_flexfields_b f;
+
+2. To review the BI OBJECT Name and other columns
+
+select * from fusion.fnd_kf_segment_labels_b where key_flexfield_code= 'GL#';
+
+3. To check if any Flexfileds are in EDITED mode.
+
+select flexfield_type, descriptive_flexfield_code, bi_enabled_flag, deployment_date, deployment_status, SEED_DATA_SOURCE from FND_DF_FLEXFIELDS_B where deployment_status != 'DEPLOYED'
+order by flexfield_type desc, descriptive_flexfield_code;
+
+4. Replace the DFF/EFF in the where clause and check the issue DFF or EFF are deployed or not
+
+select * from fusion.fnd_df_flexfields_b where descriptive_flexfield_code = 'EGO_ITEM_EFF';
+
+select * from fusion.fnd_df_contexts_b where descriptive_flexfield_code = 'EGO_ITEM_EFF';
+
+select * from fusion.fnd_df_segments_b where descriptive_flexfield_code = 'EGO_ITEM_EFF' and ENABLED_FLAG = 'Y'
+
+---------------------------------------------
+You can use this subject area that contains both transaction and GL information
+Subledger Accounting - Journals Real Time
+-> GL Journal Details (journal batch, header, line details)
+-> Journal (journal batch, header, line details)
+-> Payables Transaction Details (transaction details)
+
+ ------------------------------
+ 1) ESS Monitor Role --> Abstart Role (Read only privilege for monitioring ess jobs, republish button disabled)
+ add at data role hierarchy section wizard
+ 
+ after creating Import Uer and Role Application Security Data'
+ -------------------------------
+ 2) ESS Various options at role level (Common Job Roles) --> data security policy --> search with ESS request history
+			1) select all values --> and enable require policy
+			
+---------------------------------
+The following privilege allows access to the Reports and Analytics option in the Navigator menu:
+
+Name:  Manage Reports and Analytics
+Code:  ATK_MANAGE_REPORTS_AND_ANALYTICS_PRIV
+
+-----------------------------
+OTBI Duty list --> https://docs.oracle.com/cloud/farel8/common/OUTBI/ch03.htm#fe_SAs_ch3_fin_table			
+
+https://erpdive.com/all-white-papers-for-fusion-applications-hcm-doc-id-1504483-1
+
+meeting details
+-----------
+8125112233/info.techleadsit@gmail.com
+ Fusion@appS9
+ 
+Reference data set sql
+---------------------------
+SELECT fsa.reference_group_name,
+         fs.set_id,
+         fs.set_code,
+         fs.set_name,
+         fs.description,
+         bu.bu_name
+    FROM fnd_setid_assignments   fsa,
+         fun_all_business_units_v bu,
+         fnd_setid_sets_vl       fs
+   WHERE     1 = 1
+         AND fsa.determinant_type = 'BU'
+         AND fsa.determinant_value = bu.bu_id
+         AND fsa.set_id = fs.set_id
+--         AND fsa.reference_group_name LIKE 'PER%'
+and fsa.set_id = 300000003204013
+ORDER BY reference_group_name,
+         set_code,
+         set_name,
+         bu_name
+		 
+A20_CUST_1
+
+D01-D10000-516460-9999-999999-999999-999999
+
+https://ecbp-test.fa.us2.oraclecloud.com:443/analytics/saw.dll?bipublisherEntry&Action=open&itemType=.xdo&bipPath=%2FCustom%2FDemo%20Bursting%2FAP-Outstanding.xdo&bipParams={"_xmode":"2","_xiasynch":"","_xpf":"","_xpt":"0","_dFlag":"false","_edIndex":"0","_dIndex":"0","_rToken":"","_ranDiag":"false","_xdo":"%2FCustom%2FDemo%20Bursting%2FAP-Outstanding.xdo","_params_dashboardexpr":"","_xt":"DemoRTF","_xf":"html","_xautorun":"true"}&_linkToReport=true
+
+https://ecbp-test.fa.us2.oraclecloud.com:443/analytics/saw.dll?bipublisherEntry&Action=open&itemType=.xdo&bipPath=%2FCustom%2FThe%20Partners%2FPayroll_Report.xdo&bipParams={"_xmode":"2","_xiasynch":"","_xpf":"","_xpt":"0","_dFlag":"false","_edIndex":"0","_dIndex":"0","_rToken":"","_ranDiag":"false","_xdo":"%2FCustom%2FThe%20Partners%2FPayroll_Report.xdo","_xt":"Payroll_Report","_xf":"pdf","_xautorun":"true"}&_linkToReport=true
+
+/oracle/apps/extensions/ui/flows/Invoice_Report_Page.xml#Invoice_Report_Page
+
+focus view id : /FuseOverview	
+web applicaion : ORA_FSCM_UI
+applicaiton stripe ; fscm
+link type : applicaiton page
+
+
+------------------------------------
+<?import:xdoxsl:///Custom/Common Content/Templates/DRTestTemplate.xsb?>
+
+<?if: BU_NAME = ‘InCloud Corp US BU’?> <?call-template: image1?><?end if?>
+
+<?call-template: customtext?>
+---------------------------------------------
